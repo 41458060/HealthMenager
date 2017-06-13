@@ -37,8 +37,6 @@
                     {
                         type: 'inside',
                         realtime: true,
-                        start: 0,
-                        end: 50
                     }
                 ],
                 xAxis: {
@@ -57,6 +55,8 @@
                         name: '舒张压',
                         type: 'line',
                         data: [10, 11, 15, 13, 12, 13, 10],
+                        smooth: true,
+
                         markPoint: {
                             data: [
                                 { type: 'max', name: '最大值' },
@@ -73,6 +73,9 @@
                         name: '收缩压',
                         type: 'line',
                         data: [1, -2, 2, 5, 3, 2, 0],
+                        smooth: true,
+                        symbol: 'none',
+                        sampling: 'average',
                         markPoint: {
                             data: [
                                 { type: 'max', name: '最大值' },
@@ -150,6 +153,9 @@
                         name: '舒张压',
                         type: 'line',
                         data: [10, 11, 15, 13, 12, 13, 10],
+                        smooth: true,
+                        symbol: 'none',
+                        sampling: 'average',
                         markPoint: {
                             data: [
                                 { type: 'max', name: '最大值' },
@@ -166,6 +172,9 @@
                         name: '收缩压',
                         type: 'line',
                         data: [1, -2, 2, 5, 3, 2, 0],
+                        smooth: true,
+                        symbol: 'none',
+                        sampling: 'average',
                         markPoint: {
                             data: [
                                 { type: 'max', name: '最大值' },
@@ -242,6 +251,9 @@
                         name: '舒张压',
                         type: 'line',
                         data: [10, 11, 15, 13, 12, 13, 10],
+                        smooth: true,
+                        symbol: 'none',
+                        sampling: 'average',
                         markPoint: {
                             data: [
                                 { type: 'max', name: '最大值' },
@@ -258,6 +270,9 @@
                         name: '收缩压',
                         type: 'line',
                         data: [1, -2, 2, 5, 3, 2, 0],
+                        smooth: true,
+                        symbol: 'none',
+                        sampling: 'average',
                         markPoint: {
                             data: [
                                 { type: 'max', name: '最大值' },
@@ -314,8 +329,6 @@
                     {
                         type: 'inside',
                         realtime: true,
-                        start: 0,
-                        end: 50
                     }
                 ],
                 xAxis: {
@@ -334,6 +347,9 @@
                         name: '舒张压',
                         type: 'line',
                         data: [10, 11, 15, 13, 12, 13, 10],
+                        smooth: true,
+                        symbol: 'none',
+                        sampling: 'average',
                         markPoint: {
                             data: [
                                 { type: 'max', name: '最大值' },
@@ -350,6 +366,9 @@
                         name: '收缩压',
                         type: 'line',
                         data: [1, -2, 2, 5, 3, 2, 0],
+                        smooth: true,
+                        symbol: 'none',
+                        sampling: 'average',
                         markPoint: {
                             data: [
                                 { type: 'max', name: '最大值' },

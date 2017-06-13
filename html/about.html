@@ -7,7 +7,7 @@
     <link href="../CSS/main.css" type="text/css" rel="stylesheet" />
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../js/jquery.goup.js"></script>
-
+    <script type="text/javascript" src="../js/jquery.qrcode.min.js"></script>
 </head>
 
 <body>
@@ -37,17 +37,29 @@
             </div>
         </div>
     </div>
-    <div class="bot">联系我们 76491781@qq.com</div>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $.goup({
-                trigger: 100,
-                bottomOffset: 50,
-                locationOffset: 50,
-                titleAsText: true
+    <div id="qrcode" style="margin-left:41%;">
+        <script type="text/javascript">
+            jQuery("#qrcode").qrcode({
+                render: "canvas", // 渲染方式有table方式和canvas方式
+                text: "HealthManager", //二维码内容
+                correctLevel: 2, //二维码纠错级别
+                background: "#fff", //背景颜色
+                foreground: "#43CD80" //二维码颜色
             });
-        });
-    </script>
+        </script>
+    </div>
+    <div>
+        <div class="bot">联系我们 76491781@qq.com</div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $.goup({
+                    trigger: 100,
+                    bottomOffset: 50,
+                    locationOffset: 50,
+                    titleAsText: true
+                });
+            });
+        </script>
 </body>
 
 </html>
